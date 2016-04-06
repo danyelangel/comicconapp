@@ -1,0 +1,49 @@
+<div class="wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <nav id="horizontal-nav" class="navbar navbar-default navbar-header" role="navigation">
+          <div class="text-center hidden-lg hidden-md">
+            <%= link_to image_tag("logo-header.png", alt: "Comic Con", class: "logo"), "/" %>
+            <button type="button" class="navbar-toggle toggle-menu menu-right push-body" data-toggle="collapse"><i class="ion-navicon-round"></i></button>
+          </div>
+
+          <div class="container text-center hidden-xs hidden-sm">
+            <div class="col-md-2 header-active">
+              <%= link_to 'Home', '/', data: { no_turbolink: true } %>
+            </div>
+            <div class="col-md-2">
+              <!-- <%= link_to 'Expositores', '#', data: { no_turbolink: true } %> -->
+            </div>
+            <div class="col-md-2">
+              <%= link_to 'Prensa', '/prensa', data: { no_turbolink: true } %>
+            </div>
+            <div class="col-md-2">
+              <%= link_to 'Invitados', '/invitados', data: { no_turbolink: true } %>
+            </div>
+            <div class="col-md-2">
+              <%= link_to 'Contáctenos', '/#contactenos', data: { no_turbolink: true } %>
+            </div>
+            <div class="col-md-2 social-media">
+              <ul class="social-media">
+                <li>
+                  <%= link_to 'https://www.facebook.com/ComicConColombia', alt: "Facebook Comic Con Colombia", target: "_blank" do %>
+                    <i class="ion-social-facebook"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to 'https://twitter.com/comicconcol', alt: "Twitter Comic Con Colombia", target: "_blank" do %>
+                    <i class="ion-social-twitter"></i>
+                  <% end %>
+                </li>
+              </ul>
+              <%= link_to image_tag("head-boletas.png", alt: "Adquiere tu boleta", class: "head-boletas"), 'http://vive.tuboleta.com/shows/show.aspx?sh=UCOMIC', target: "_blank" %>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</div>

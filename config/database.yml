@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  encoding: unicode
+  username: <%= ENV['POSTGRESQL_USER'] %>
+  password: <%= ENV['POSTGRESQL_PASSWD'] %>
+  host: <%= ENV['POSTGRESQL_HOST'] %>
+
+development:
+  <<: *default
+  database: comicon_development
+
+test:
+  <<: *default
+  database: comicon_test
+
+production:
+  <<: *default
+  username: <%= ENV['POSTGRESQL_USER'] %>
+  password: <%= ENV['POSTGRESQL_PASSWD'] %>
+  host: <%= ENV['POSTGRESQL_HOST'] %>
+  database: <%= ENV['POSTGRESQL_DATABASE'] %>

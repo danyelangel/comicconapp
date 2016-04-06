@@ -1,0 +1,54 @@
+<footer class="wow fadeInUp">
+  <div class="container">
+    <div class="row info-footer text-center">
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+      <div class="col-xs-12 col-md-4 col-lg-3"><h3>Cra 76 N° 34A - 85 Int. 201</h3></div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+      <div class="col-xs-12 col-md-4 col-lg-2"><h3>+57 (4) 2503793</h3></div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+      <div class="col-xs-12 col-md-4 col-lg-3"><h3>info@comicconcolombia.com</h3></div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+    </div>
+    <div class="row info-footer text-center">
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+      <div class="col-xs-12 col-md-4 col-lg-3"><h3>Calle 41 N° 55 - 80</h3></div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+      <div class="col-xs-12 col-md-4 col-lg-2"><h3>+57 (4) 3138830</h3></div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+      <div class="col-xs-12 col-md-4 col-lg-3"><h3>info@plazamayor.com.co</h3></div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-1"><%= image_tag("footer-linea.png", alt: "Separador") %></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-md-3 text-left logos-footer">
+        <%= image_tag("footer-logo-comic-con.png", alt: "Comic Con Colombia") %>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-2">
+        <%= image_tag("footer-tres-lineas-izquierda.png", alt: "Separador") %>          
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <ul class="social-media text-center">
+          <li>
+            <%= link_to 'https://www.facebook.com/ComicConColombia', alt: "Facebook Comic Con Colombia", target: "_blank" do %>
+              <i class="ion-social-facebook"></i>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to 'https://twitter.com/comicconcol', alt: "Twitter Comic Con Colombia", target: "_blank" do %>
+              <i class="ion-social-twitter"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-2">
+        <%= image_tag("footer-tres-lineas-derecha.png", alt: "Separador") %>
+      </div>
+      <div class="col-xs-4 col-md-3 text-right logos-footer">
+        <%= image_tag("footer-logo-plaza-mayor.png", alt: "Plaza Mayor") %>
+      </div>
+
+    </div>
+    <div class="text-center" id="footer-habla">
+      <p>Diseñado y desarrollado por <%= link_to image_tag("habla-creativo.png", onmouseover: "this.src='#{asset_path("habla-creativo-hover.png")}'", onmouseout: "this.src='#{asset_path("habla-creativo.png")}'", alt: "Habla Grupo Creativo", width: '40'), 'http://www.hablacreativo.com/', target: "_blank" %> </p>
+    </div>
+  </div>    
+</footer>

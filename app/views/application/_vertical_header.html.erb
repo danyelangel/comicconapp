@@ -1,0 +1,22 @@
+<div id="vertical-navbar" class="navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+
+  <ul class="nav navbar-nav">
+    <li><%= link_to 'Home', '/', data: { no_turbolink: true, toggle: "collapse", target: ".collapse" } %></li>
+    <!-- <li><%= link_to 'Expositores', '#', data: { no_turbolink: true, toggle: "collapse", target: ".collapse"  } %></li> -->
+    <li><%= link_to 'Prensa', '/prensa', data: { no_turbolink: true, toggle: "collapse", target: ".collapse"  } %></li>
+    <li><%= link_to 'Invitados', '/invitados', data: { no_turbolink: true, toggle: "collapse", target: ".collapse"  } %></li>
+    <li><%= link_to 'Contáctenos', '/#contactenos', data: { no_turbolink: true, toggle: "collapse", target: ".collapse"  } %></li>
+    <li class="social-media text-center">
+      <%= link_to 'https://www.facebook.com/ComicConColombia', alt: "Facebook Comic Con Colombia", target: "_blank", data: { no_turbolink: true, toggle: "collapse", target: ".collapse" } do %>
+        <i class="ion-social-facebook"></i>
+      <% end %>
+      <%= link_to 'https://twitter.com/comicconcol', alt: "Twitter Comic Con Colombia", target: "_blank", data: { no_turbolink: true, toggle: "collapse", target: ".collapse" } do %>
+        <i class="ion-social-twitter"></i>
+      <% end %>
+    </li>
+
+    <li><%= link_to image_tag("head-boletas.png", alt: "Adquiere tu boleta", class: "head-boletas"), 'http://vive.tuboleta.com/shows/show.aspx?sh=UCOMIC ', target: "_blank" %></li>
+
+  </ul>
+
+</div>

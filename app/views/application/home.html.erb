@@ -1,0 +1,403 @@
+<%= content_for :title do 'Home - Comic Con Colombia 2015' end %>
+
+<!-- Video Background -->
+<header class="video-bg" id="home" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=B9ft9rfI040',containment:'body',autoPlay:true,mute:true,startAt:0,opacity:1}">youtube</a>
+
+  <div class="video-bg-content text-center">
+    <div class="clear-both">
+      <%= image_tag("banner-logo.png", alt: "Comic Con Colombia") %>
+      <%= image_tag("mouse-scroll.png", alt: "Mouse Scroll") %>              
+    </div>
+    <div class="allies-logos">
+      <%= image_tag("logo-comiccon.png", alt: "Comic Con", class: "logo-comic-con") %>
+      <%= image_tag("logo-plaza-mayor.png", alt: "Plaza Mayor", class: "logo-plaza-mayor") %>
+    </div>
+  </div>
+
+  <%= render :partial => 'horizontal_header' %>
+</header>
+
+<!-- Razones -->
+<section class="reasons-attend section-space text-center">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="reasons-title col-md-8 col-md-offset-2">
+        <h1 class="main-title">Razones para asistir a Comic Con</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="clear-both">
+        <div class="col-sm-4">
+          <%= image_tag("razon-1.png", alt: "Razón uno") %>
+          <h4>Convención anual más grande e importante de la cultura pop</h4>
+        </div>
+        <div class="col-sm-4">
+          <%= image_tag("razon-2.png", alt: "Razón dos") %>
+          <h4>Artistas nacionales e internacionales</h4>
+        </div>
+        <div class="col-sm-4">
+          <%= image_tag("razon-3.png", alt: "Razón tres") %>
+          <h4>Amplia agenda académica, concursos y torneos patrocinados por las marcas participantes</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Que es -->
+<section class="what-is section-space text-center">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="main-title">¿Qué es?</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="container-what-is">
+        <div class="col-sm-6"> 
+          <p>Es la convención anual mas grande e importante de la <span>cultura pop</span> y la <span>industria del entretenimiento</span>. Comic Con es un evento que actualmente se celebra en las principales ciudades del mundo: New York, Londres, Los Angeles, Buenos Aires entre otras. Originario de EEUU en donde se viene realizando hace ya más de 45 años, y cuenta con la participación y presencia de todos los <span>estudios de cine y TV, video juegos e editoriales.</span></p>
+          <p>Comic Con además de ser el evento más importante e incleíble de la cultura pop es también una <span>plataforma de anuncios y presentación</span> para la industria del cine, TV, video juegos y música.</p>
+        </div>
+        <div class="col-sm-6">
+          <%= image_tag("que-es.png", alt: "¿Qué es?") %>
+        </div>        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Obtener Boleta -->
+<section class="get-tickets text-center section-space">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="main-title">No te pierdas la oportunidad de vivir la expericencia Comic Con</h1>
+        <p>Viernes: $13.000 / Sábado y Domingo: $15.000 (por día) / Pasaporte para los 3 días: $40.000</p>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+        <%= link_to image_tag('boton-obtener-boleta.png', alt: "Obtener Boleta"), 'http://vive.tuboleta.com/shows/show.aspx?sh=UCOMIC', target: '_blank' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Cuando es -->
+<section class="when-is text-center section-space">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="main-title">¿Cuándo es?</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="when-is-information col-xs-12">
+        <p><span>Tres días</span> en los que se dan cita todas las diferentes aficiones como el cómic, el cine, los videojuegos, el anime, el manga, la literatura fantástica, los juegos de rol, el cosplay y más. Junto a <span>invitados nacionales e internacionales</span>, con una amplia agenda académica, <span>concursos y torneos</span> patrocinados por las marcas participantes</p>
+      </div>
+    </div>
+    <div class="circles">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <%= image_tag("cuando-es.png", alt: "19, 20 y 21 de Junio") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Donde es -->
+<section class="where-is text-center section-space">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="main-title">¿Dónde es?</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="where-is-information col-xs-12">
+        <p>En el mejor lugar para realizar un evento masivo de esta categoría, en el <span>Centro de Convenciones y Exposiciones Plaza Mayor</span>, socio de Comic Con Colombia, y quien le apuesta a impulsar nuestros espacios experienciales, Contenidos académicos y las empresas emprendedoras e innovadoras que nos acompañan cada año.</p>
+      </div>
+      <%= image_tag("donde-es-plazamayor.png", alt: "Donde es Plaza Mayor") %>
+    </div>
+  </div>
+</section>
+
+
+<!-- Actividades -->
+<section class="activities section-space text-center">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="main-title">Actividades</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="activities-information col-xs-12">
+        <p>Comic con Colombia consta de diferentes <span>zonas</span> para que los asistentes puedan sentirse protagonistas de <span>su propia aventura</span> al compartir, jugar, comprar su merchandising favorito y adquirir conocimientos de expertos en la Cultura Pop y del entretenimiento. En esta área encontrarás todas las <span>actividades que tendremos este año</span> y podrás proponer nuevas actividades que desees ver o hacer. Si quieres suscribirte a nuestras noticias pulsa el botón de abajo, <span>podrás enterarte de todo antes que los demás.</span></p>
+      </div>
+    </div>
+  </div>
+  <ul class="grid swipe-rotate" id="grid-activities">
+    <li>
+      <%= link_to image_path("actividades-comercial.jpg"), class: "fancybox-activities", rel: "lightbox", title: "Zona Comercial" do %>
+        <figure>
+          <%= image_tag("actividades-comercial.jpg", alt: "Zona Comercial") %>
+          <figcaption class="dark-blue">
+            <h3>Zona Comercial</h3>
+            <p>Es un espacio pensado para que las empresas relacionadas con el universo del entretenimiento ofrezcan a manera de exhibición y venta sus productos y servicios.</p>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("actividades-experiencia.jpg"), class: "fancybox-activities", rel: "lightbox", title: "Zona Experiencia" do %>
+        <figure>
+          <%= image_tag("actividades-experiencia.jpg", alt: "Zona Experiencia") %>
+          <figcaption class="yellow">
+            <h3>Zona Experiencia</h3>
+            <p>Son espacios acondicionados para que los asistentes puedan tomarse fotografías, participar de eventos de activación de marca, conocer más sobre ciertas temáticas a resaltar cada año en la convención y compartir con los artistas invitados.</p>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("actividades-gamer.jpg"), class: "fancybox-activities", rel: "lightbox", title: "Zona Gamer" do %>
+        <figure>
+          <%= image_tag("actividades-gamer.jpg", alt: "Zona Gamer") %>
+          <figcaption class="blue">
+            <h3>Zona Gamer</h3>
+            <p>Es uno de los espacios predilectos donde se llevarán a cabo torneos y activaciones, especialmente sobre videojuegos y tecnología en sus principales formatos consolas, pc o más.</p>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("actividades-academico.jpg"), class: "fancybox-activities", rel: "lightbox", title: "Zona Académico" do %>
+        <figure>
+          <%= image_tag("actividades-academico.jpg", alt: "Zona Académico") %>
+          <figcaption class="yellow">
+            <h3>Zona Académico</h3>
+            <p>Es el espacio diferenciador de la Comic Con Colombia como área académica donde se desarrollan Charlas, Conferencias, Talleres,  Workshops y Exposiciones de los artistas y expertos invitados.</p>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("actividades-comunidades.jpg"), class: "fancybox-activities", rel: "lightbox", title: "Zona Comunidades" do %>
+        <figure>
+          <%= image_tag("actividades-comunidades.jpg", alt: "Zona Comunidades") %>
+          <figcaption class="red">
+            <h3>Zona Comunidades</h3>
+            <p>Los seguidores de las principales sagas de cine, TV y literatura fantástica, tienen la oportunidad de encontrarse para compartir experiencias e invitar a nuevos fans a ser parte de ellas.</p>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("actividades-artistas.jpg"), class: "fancybox-activities", rel: "lightbox", title: "Zona Artistas" do %>
+        <figure>
+          <%= image_tag("actividades-artistas.jpg", alt: "Zona Artistas") %>
+          <figcaption class="orange">
+            <h3>Zona Artistas</h3>
+            <p>Con este espacio se busca exaltar y evidenciar el talento local en las áreas de la ilustración, diseño, animación, cosplay, literatura fantástica y la producción audiovisual. Permitiendo que estos artistas puedan compartir su trabajo y tener un contacto directo con el público que busca nuevas experiencias.</p>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+  </ul>
+
+  <div class="section-agenda">
+    <%= link_to "VER PROGRAMACIÓN", "https://issuu.com/comicconcolombia/docs/progcomiccon2015?e=0", class: "btn-form", target: "_blank" %>
+  </div>
+
+</section>
+
+
+<!-- Versiones anteriores -->
+<section class="previous-versions section-space text-center">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="main-title">Versiones anteriores</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+    </div>
+  </div>
+  <ul class="grid swipe-rotate" id="grid-previous-versions">
+    <li>
+      <%= link_to image_path("versiones-anteriores-1.png"), class: "fancybox-previous-versions", rel: "lightbox", title: "Comic Con 2014" do %>
+        <figure>
+          <%= image_tag("versiones-anteriores-1.png", alt: "Comic Con 2014") %>
+          <figcaption>
+            <h3>Comic Con Colombia</h3>
+            <h3>2014</h3>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+
+    <li>
+      <%= link_to image_path("versiones-anteriores-2.png"), class: "fancybox-previous-versions", rel: "lightbox", title: "Comic Con 2014" do %>
+        <figure>
+          <%= image_tag("versiones-anteriores-2.png", alt: "Comic Con 2014") %>
+          <figcaption>
+            <h3>Comic Con Colombia</h3>
+            <h3>2014</h3>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("versiones-anteriores-3.png"), class: "fancybox-previous-versions", rel: "lightbox", title: "Comic Con 2014" do %>
+        <figure>
+          <%= image_tag("versiones-anteriores-3.png", alt: "Comic Con 2014") %>
+          <figcaption>
+            <h3>Comic Con Colombia</h3>
+            <h3>2014</h3>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("versiones-anteriores-4.png"), class: "fancybox-previous-versions", rel: "lightbox", title: "Comic Con 2014" do %>
+        <figure>
+          <%= image_tag("versiones-anteriores-4.png", alt: "Comic Con 2014") %>
+          <figcaption>
+            <h3>Comic Con Colombia</h3>
+            <h3>2014</h3>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("versiones-anteriores-5.png"), class: "fancybox-previous-versions", rel: "lightbox", title: "Comic Con 2014" do %>
+        <figure>
+          <%= image_tag("versiones-anteriores-5.png", alt: "Comic Con 2014") %>
+          <figcaption>
+            <h3>Comic Con Colombia</h3>
+            <h3>2014</h3>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to image_path("versiones-anteriores-6.png"), class: "fancybox-previous-versions", rel: "lightbox", title: "Comic Con 2014" do %>
+        <figure>
+          <%= image_tag("versiones-anteriores-6.png", alt: "Comic Con 2014") %>
+          <figcaption>
+            <h3>Comic Con Colombia</h3>
+            <h3>2014</h3>
+          </figcaption>
+        </figure>
+      <% end %>
+    </li>
+  </ul>
+  <div class="separator-bottom col-xs-12"> <%= image_tag("separador-2.png", alt: "Separador") %> </div>
+</section>
+
+
+<!-- Nuestros patrocinadores -->
+<section class="our-sponsors text-center section-space">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="main-title">Nuestros Organizadores</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="ours-organizers-logos col-md-12">
+        <ul>
+          <li><%= image_tag("organizer-comic-con-colombia.png", alt: "Comic Con Colombia") %></li>
+          <li><%= image_tag("organizer-plaza-mayor.png", alt: "Plaza Mayor") %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="main-title">Patrocinan</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="ours-sponsors-logos col-md-12">
+        <ul>
+          <li><%= image_tag("sponsor-planet-comics.png", alt: "Planet Comics") %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="main-title">Apoyan</h1>
+        <%= image_tag("separador-1.png", alt: "Separador") %>
+      </div>
+      <div class="ours-support-logos col-md-12">
+        <ul>
+          <li><%= image_tag("support-medellin-todos-por-la-vida.png", alt: "Medellín Todos Por La Vida") %></li>
+          <li><%= image_tag("support-art-hotel-boutique.png", alt: "Art Hotel Boutique") %></li>
+          <li><%= image_tag("support-upb.png", alt: "UPB") %></li>
+          <li><%= image_tag("support-wacom.png", alt: "Wacom") %></li>
+          <li><%= image_tag("support-internautismo-cronico.png", alt: "Internautismo Cronico") %></li>
+          <li><%= image_tag("support-adn.png", alt: "ADN") %></li>
+          <li><%= image_tag("support-teleantioquia.png", alt: "Teleantioquia") %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contáctanos -->
+<section class="contact-us text-center section-space" id="contactenos">
+  <div class="container wow bounceInUp">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= image_tag("contactenos.png", alt: "Contáctenos") %>
+      </div>
+      <div class="contact-us-information col-xs-12 col-sm-8 col-sm-offset-2">
+        <%= form_for @user, url: '/contact_us/', id: "contact_us" do |u| -%>
+          <div class="col-xs-12 col-sm-6">
+            <label>Nombre</label>
+            <%= u.text_field :name, class: 'form-control', placeholder: 'Ej: Camilo Ruiz Cadavid', required: 'required' %>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <label>Correo Electrónico</label>
+            <%= u.text_field :email, class: 'form-control', placeholder: 'Ej: correo@dominio.com', type: 'email', required: 'required' %>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <label>Empresa</label>
+            <%= u.text_field :company, class: 'form-control', placeholder: 'Ej: Grupo Creativo Habla', required: 'required' %>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <label>Teléfono</label>
+            <%= u.text_field :phone, class: 'form-control', placeholder: 'Ej: (+57)(4) 448 1925', required: 'required' %>
+          </div>
+          <div class="col-xs-12 form-subject">
+            <label>Asunto</label>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+              <%= radio_button_tag(:subject, "Expositor", selected: 'selected') %>
+              <%= label_tag(:subject_1, "Expositor") %>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+              <%= radio_button_tag(:subject, "Comunidad") %>
+              <%= label_tag(:subject_2, "Comunidad") %>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+              <%= radio_button_tag(:subject, "Patrocinador") %>
+              <%= label_tag(:subject_3, "Patrocinador") %>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+              <%= radio_button_tag(:subject, "Medio de comunicación") %>
+              <%= label_tag(:subject_4, "Medio de comunicación") %>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <label>Comentario</label>
+            <%= text_area :user, :comment, class: 'form-control', rows: 4, cols: 50, required: 'required' %>
+          </div>    
+
+          <div class="col-xs-12 buttons">
+            <%= submit_tag "Enviar", :class => "btn-form" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <%= bootstrap_flash %>
+      </div>
+    </div>
+  </div>
+</section>

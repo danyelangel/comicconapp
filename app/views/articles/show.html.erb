@@ -1,0 +1,27 @@
+<%= content_for :title do @article.title+' - Administrador - Comic Con Colombia 2015' end %>
+
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-2">
+      <h2><%=l @article.date, :format => :short %></h3>
+    </div>
+
+    <div class="col-xs-12 col-md-10">
+      <h2><%= @article.title %></h2>
+      <h4><%= @article.subtitle %></h4>
+      <!-- <%= image_tag(image_path(@article.photo.url), class: "img-thumbnail img-responsive") if @article.photo.exists? %> -->
+      <div class="content-each-blog">
+        <%= @article.content.gsub(/\n/, '<br>').html_safe %>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="general-actions">
+    <%= link_to 'Editar', edit_article_path(@article), data: { no_turbolink: true }, class: "btn btn-form" %>
+    <%= link_to 'Volver', articles_path, data: { no_turbolink: true }, class: "btn btn-form-blue" %>
+  </div>
+</div>
